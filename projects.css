@@ -129,14 +129,14 @@ body, html {
 }
 
 .btn-Projects {
-    width: 200px;
+    width: 300px;
     height: 50px;
     padding: 10px;
     color: white;
     background-color: black;
     border: none;
     transition: scale 1s;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .btn-Projects:hover {
@@ -144,4 +144,91 @@ body, html {
     background-color: white;
     color: black;
     border: 2px solid black;
+}
+
+.dropdown {
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    display: none;
+}
+
+.burgerIcon {
+    font-size: 50px;
+    margin-right: 20px;
+    display: none;
+}
+
+
+@media only screen and (max-width: 450px){
+    
+    .btn-nav {
+        display: none;
+    }
+
+    .burgerIcon {
+        display: inline-block;
+    }
+
+    .nav {
+        padding-bottom: 10px;
+        width: 450px;
+    }
+
+    .home {
+        width: 450px;
+    }
+
+    .leftNav {
+        width: 80%;
+        height: 100%;
+    }
+
+    .rightNav {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        position: relative;
+    }
+
+
+    .burgerIcon:hover .dropdown {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 10px 8px rgb(27, 27, 27);
+        z-index: 1;
+    }
+
+    .projects {
+        text-align: center;
+    }
+
+    .childRow-container {
+        display: none !important;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: -60px;
+        align-items: center;
+    }
+
+    .childRow {
+        width: 200px;
+    }
+
+    .btn-Projects {
+        margin-top: 50px;
+    }
+
+    
+
 }

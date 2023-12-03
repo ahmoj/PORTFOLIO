@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/162c2f36ee.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -19,10 +20,18 @@
                 <span style="font-size: 30px; padding-top: 20px;">Ahmed Jerebicanin</span>
             </div>
             <div class="rightNav">
-                <button onclick="location.href='home.html'">Home</button>
-                <button onclick="location.href='about.html'">About</button>
-                <button onclick="location.href='projects.html'">Projects</button>
-                <button onclick="location.href='contacts.html'">Contacts</button>
+                <button class="btn-nav" onclick="location.href='home.html'">Home</button>
+                <button class="btn-nav"  onclick="location.href='about.html'">About</button>
+                <button class="btn-nav"  onclick="location.href='projects.html'">Projects</button>
+                <button class="btn-nav"  onclick="location.href='contacts.html'">Contacts</button>
+                <span class="burgerIcon">=
+                    <div class="dropdown">
+                        <button onclick="location.href='home.html'" style="width: 100%; height: 50px; font-size: 20p;">Home</button>
+                        <button onclick="location.href='about.html'" style="width: 100%; height: 50px; font-size: 20px;">About</button>
+                        <button onclick="location.href='projects.html'" style="width: 100%; height: 50px; font-size: 20px;">Projects</button>
+                        <button onclick="location.href='contacts.html'" style="width: 100%; height: 50px; font-size: 20px;">Contacts</button>
+                    </div>
+                </span>
             </div>
         </div>
         <div class="home">
@@ -34,8 +43,10 @@
                     <span style="font-size: 40px;">Hello<br> World</span>
                 </div>
                 <div class="circleHome-2"></div>
+                <div class="circleHome-3"></div>
                 <button class="btn-Home" onclick="location.href='about.html'">About Me</button>
-                <span style="font-size: 40px; text-wrap: nowrap;">I am a <i style="font-size: 35px;">FRONT-END DEVELOPER</i><br> <span>from</span> <b style="font-size: 60px">Serbia</b></span>
+                <span class="spanRight" style="font-size: 40px; text-wrap: nowrap;">I am a <i class="front-end" style="font-size: 30px;">FRONT-END DEVELOPER</i><br> <span>from</span> <b style="font-size: 60px">Serbia</b></span>
+                <button onclick="location.href='about.html '" class="btn-Home-2">About Me</button>
             </div>
         </div>
     </div>
